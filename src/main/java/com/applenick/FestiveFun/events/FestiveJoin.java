@@ -18,17 +18,18 @@ public class FestiveJoin implements Listener {
 	private final FireworkEffect fwe = FireworkEffect.builder()
 			.withColor(Color.RED)
 			.withColor(Color.WHITE)
-			.withColor(Color.AQUA)
+			.withColor(Color.BLUE)
 			.withFlicker()
 			.withTrail()
-			.with(Type.STAR).build();
+			.with(Type.STAR)
+			.build();
 	
 	@EventHandler
 	public void onJoin(PlayerJoinEvent playerJoin){
 		Player p = playerJoin.getPlayer();
 		Location loc = p.getLocation();
 		
-		FireworkUtil.launchFirework(loc, fwe);
+		FireworkUtil.delayedFirework(loc, fwe, 2);
 		
 		if(Config.joinMessage()){
 			p.sendMessage(Alog.color(Config.getJoinMessage()));

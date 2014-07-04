@@ -11,7 +11,7 @@ import org.bukkit.inventory.meta.FireworkMeta;
 public class FireworkUtil {
 	
 
-	public static void launchFirework(Location loc, FireworkEffect fwe){
+	public static void instantFirework(Location loc, FireworkEffect fwe){
 		Firework firework = loc.getWorld().spawn(loc, Firework.class);
 		FireworkMeta data = firework.getFireworkMeta();
 		data.addEffect(fwe);
@@ -21,5 +21,18 @@ public class FireworkUtil {
         nbtData.setInt("LifeTime", 2);
         ((CraftFirework) firework).getHandle().a(nbtData);
 	}
+	
+	public static void delayedFirework(Location loc, FireworkEffect fwe, int power){
+		Firework firework = loc.getWorld().spawn(loc, Firework.class);
+		FireworkMeta data = firework.getFireworkMeta();
+		data.addEffect(fwe);
+		data.setPower(power);
+		firework.setFireworkMeta(data);
+        NBTTagCompound nbtData = new NBTTagCompound();
+        nbtData.setInt("Life", 1);
+        nbtData.setInt("LifeTime", 2);
+        ((CraftFirework) firework).getHandle().a(nbtData);
+	}
+
 	
 }

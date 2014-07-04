@@ -1,6 +1,6 @@
 events:
   join-fireworks: true
-  join-messages: true
+  join-message: true
   
 messages:
   join-message: "&4Happy &f&l4th of &b&lJuly!"
