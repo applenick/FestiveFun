@@ -7,7 +7,7 @@ public class Config {
 	}
 	
 	public static boolean joinMessage(){
-		return Festive.get().getConfig().getBoolean("events.join-fireworks.join-message");
+		return Festive.get().getConfig().getBoolean("events.join-message");
 	}
 	
 	public static String getJoinMessage(){

@@ -1,11 +1,6 @@
-#Festive Config
-
-#You can enable or disable the firework effects based on your prefrence.
-#You can also set the Join message that the plugin sends the player.
-
-
 events:
-  join-firework:true
-  join-message:true
+  join-fireworks: true
+  join-messages: true
+  
 messages:
-  join-message: "&4&lHappy &f&l4th of &b&lJuly"
+  join-message: "&4Happy &f&l4th of &b&lJuly!"
