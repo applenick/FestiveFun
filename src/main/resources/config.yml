@@ -8,4 +8,4 @@ events:
   join-firework: true
     join-message: true
 messages:
-  join-message: "&4&lHappy &f&l4th of &b&lJuly"
+  join-message: &4&lHappy &f&l4th of &b&lJuly
