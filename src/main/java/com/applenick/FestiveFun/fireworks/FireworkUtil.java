@@ -28,10 +28,6 @@ public class FireworkUtil {
 		data.addEffect(fwe);
 		data.setPower(power);
 		firework.setFireworkMeta(data);
-        NBTTagCompound nbtData = new NBTTagCompound();
-        nbtData.setInt("Life", 1);
-        nbtData.setInt("LifeTime", 2);
-        ((CraftFirework) firework).getHandle().a(nbtData);
 	}
 
 	
