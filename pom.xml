@@ -29,8 +29,9 @@
 			<version>0.5-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
+		<defaultGoal>clean package</defaultGoal>
 		<sourceDirectory>${basedir}/src/main/java/</sourceDirectory>
 		<resources>
 			<resource>

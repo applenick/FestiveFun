@@ -24,8 +24,9 @@ public class Festive extends JavaPlugin {
 	
 	
 	public void onEnable(){
-		this.getConfig().options().copyDefaults();
-		this.saveConfig();
+        this.getConfig().options().copyDefaults(true);
+        this.saveConfig();
+        this.reloadConfig();
 		
 		startup();
 	}
