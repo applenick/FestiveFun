@@ -2,8 +2,9 @@ package com.applenick.FestiveFun.utils;
 
 import java.util.logging.Logger;
 
+import org.bukkit.ChatColor;
+
 import com.applenick.FestiveFun.Festive;
-import com.sk89q.minecraft.util.commands.ChatColor;
 
 public class Alog {
 
