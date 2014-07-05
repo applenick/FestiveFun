@@ -5,6 +5,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.applenick.FestiveFun.events.FestiveJoin;
+import com.applenick.FestiveFun.holiday.TimeUtil;
 import com.applenick.FestiveFun.utils.Alog;
 
 public class Festive extends JavaPlugin {
@@ -15,8 +16,10 @@ public class Festive extends JavaPlugin {
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
         this.reloadConfig();
-		
+	   
 		startup();
+		
+		TimeUtil.setupCalendar();
 	}
 	
 	
