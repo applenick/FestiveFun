@@ -79,7 +79,7 @@
 							<artifactSet>
 								<includes>
 									<include>org.ocpsoft.prettytime:prettytime</include>
-									<include>org.joda-time:joda-time</include>
+									<include>joda-time:joda-time</include>
 									<include>de.jollyday:jollyday</include>
 								</includes>
 							</artifactSet>
