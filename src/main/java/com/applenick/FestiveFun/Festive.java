@@ -1,5 +1,6 @@
 package com.applenick.FestiveFun;
 
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -22,6 +23,7 @@ public class Festive extends JavaPlugin {
 	
 	private void startup(){
 		festive = this;
+		Alog.consoleMsg(Alog.dashedChatMessage(ChatColor.RED +"Festive" + ChatColor.AQUA + "Fun", "-", ChatColor.DARK_AQUA));
 		setupFireworks();
 		FestiveHolidays.loginCheck();
 	}

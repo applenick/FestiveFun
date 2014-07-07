@@ -21,7 +21,6 @@ public class FestiveHolidays {
 		Instant now = Instant.now();
 		Date date = new Date();
 		
-		Alog.consoleMsg(Alog.dashedChatMessage(ChatColor.RED +"Festive" + ChatColor.AQUA + "Fun", "-", ChatColor.DARK_AQUA));
 		Alog.consoleMsg(ChatColor.GOLD + "Today is " + ChatColor.GREEN + now.toString(dtf));
 	}
 
