@@ -2,12 +2,11 @@ package com.applenick.FestiveFun.utils;
 
 import java.util.logging.Logger;
 
-import net.minecraft.util.com.google.common.base.Strings;
-
 import org.bukkit.ChatColor;
 import org.bukkit.util.ChatPaginator;
 
 import com.applenick.FestiveFun.Festive;
+import com.google.common.base.Strings;
 
 public class Alog {
 
