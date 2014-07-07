@@ -14,7 +14,7 @@ import de.jollyday.HolidayManager;
 
 public class FestiveHolidays {
 	
-	public static DateTimeFormatter dtf = DateTimeFormat.forPattern("E , MMMM , e , yyyy");
+	public static DateTimeFormatter dtf = DateTimeFormat.forPattern("E, MMMM, ee, yyyy");
 	
 	public static void loginCheck(){		
 		HolidayManager hm = HolidayManager.getInstance(HolidayCalendar.UNITED_STATES);
