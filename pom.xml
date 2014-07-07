@@ -33,11 +33,6 @@
 			<artifactId>prettytime</artifactId>
 			<version>3.2.5.Final</version>
 		</dependency>
-            <dependency>
-                <groupId>de.jollyday</groupId>
-                <artifactId>jollyday</artifactId>
-                <version>0.4.7</version>
-            </dependency>
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
@@ -80,7 +75,6 @@
 								<includes>
 									<include>org.ocpsoft.prettytime:prettytime</include>
 									<include>joda-time:joda-time</include>
-									<include>de.jollyday:jollyday</include>
 								</includes>
 							</artifactSet>
 						</configuration>

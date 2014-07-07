@@ -25,7 +25,7 @@ public class Festive extends JavaPlugin {
 		festive = this;
 		Alog.consoleMsg(Alog.dashedChatMessage(ChatColor.RED +"Festive" + ChatColor.AQUA + "Fun", "-", ChatColor.DARK_AQUA));
 		setupFireworks();
-		FestiveHolidays.loginCheck();
+		FestiveHolidays.loginStart();
 	}
 	
 	
