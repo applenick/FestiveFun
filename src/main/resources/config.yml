@@ -1,7 +1,9 @@
-
-holiday-mode:
-  daysBefore: 7
-  daysAfter: 3
+holidays:
+  fourth-of-july: true
+  halloween: true
+  christmas: true
+  new-years-eve: true
+  
   
 events:
   join-fireworks: true

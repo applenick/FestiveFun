@@ -21,8 +21,7 @@ public class FireworkUtil {
 		((CraftFirework) firework).getHandle().a(nbtData);
 	}
 
-	public static void delayedFirework(Location loc, FireworkEffect fwe,
-			int power) {
+	public static void delayedFirework(Location loc, FireworkEffect fwe, int power) {
 		Firework firework = loc.getWorld().spawn(loc, Firework.class);
 		FireworkMeta data = firework.getFireworkMeta();
 		data.addEffect(fwe);
