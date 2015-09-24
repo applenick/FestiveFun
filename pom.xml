@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.applenick</groupId>
 	<artifactId>FestiveFun</artifactId>
-	<version>1.1</version>
+	<version>2.0</version>
 	<name>FestiveFun</name>
-	<description>A Bukkit Plugin for having Fun on Holidays</description>
+	<description>A Spigot Plugin for having Fun on Holidays</description>
 	<repositories>
 		<repository>
 			<id>spigot-repo</id>
@@ -21,7 +21,12 @@
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.7.9-R0.3-SNAPSHOT</version>
+			<version>1.8.8-R0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sk89q</groupId>
+			<artifactId>command-framework-bukkit</artifactId>
+			<version>0.6-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -44,6 +49,38 @@
 					<source>1.7</source>
 					<target>1.7</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<artifactSet>
+								<includes>
+									<include>com.sk89q:command-framework-bukkit</include>
+								</includes>
+							</artifactSet>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>pl.project13.maven</groupId>
+				<artifactId>git-commit-id-plugin</artifactId>
+				<version>2.1.10</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>revision</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

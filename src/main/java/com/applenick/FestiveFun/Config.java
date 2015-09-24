@@ -3,15 +3,15 @@ package com.applenick.FestiveFun;
 public class Config {
 	
 	public static boolean joinFireworks(){
-		return Festive.get().getConfig().getBoolean("events.join-fireworks");
+		return FestiveFun.get().getConfig().getBoolean("events.join-fireworks");
 	}
 	
 	public static boolean joinMessage(){
-		return Festive.get().getConfig().getBoolean("events.join-message");
+		return FestiveFun.get().getConfig().getBoolean("events.join-message");
 	}
 	
 	public static String getJoinMessage(){
-		return Festive.get().getConfig().getString("messages.join-message");
+		return FestiveFun.get().getConfig().getString("messages.join-message");
 	}
 
 }

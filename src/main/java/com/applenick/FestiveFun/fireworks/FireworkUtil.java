@@ -1,10 +1,10 @@
 package com.applenick.FestiveFun.fireworks;
 
-import net.minecraft.server.v1_7_R3.NBTTagCompound;
+import net.minecraft.server.v1_8_R3.NBTTagCompound;
 
 import org.bukkit.FireworkEffect;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftFirework;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftFirework;
 import org.bukkit.entity.Firework;
 import org.bukkit.inventory.meta.FireworkMeta;
 

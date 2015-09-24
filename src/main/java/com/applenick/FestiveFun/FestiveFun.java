@@ -5,37 +5,41 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.applenick.FestiveFun.events.FestiveJoin;
+import com.applenick.FestiveFun.fireworks.FireworksManager;
 import com.applenick.FestiveFun.utils.Alog;
 
-public class Festive extends JavaPlugin {
+public class FestiveFun extends JavaPlugin {
 	
-	private static Festive festive = null;	
+	private static FestiveFun festive = null;	
+	
+	private FireworksManager fireworks;
+	public FireworksManager getFireworkManager(){
+		return fireworks;
+	}
 	
 	public void onEnable(){
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
         this.reloadConfig();
-		
 		startup();
 	}
 	
 	
 	private void startup(){
 		festive = this;
-		setupFireworks();
+		fireworks = new FireworksManager();
+		setupListeners();
 	}
-	
-	
-	
-	public static Festive get(){
+		
+	public static FestiveFun get(){
 		return festive;
 	}
 	
-	public void setupFireworks(){
+	public void setupListeners(){
 		PluginManager PM = getServer().getPluginManager();
 		if(Config.joinFireworks()){
 			PM.registerEvents(new FestiveJoin(), this);
-			Alog.consoleMsg(ChatColor.GREEN + "Join Fireworks Enabled");
+			Alog.info(ChatColor.GREEN + "Join Fireworks Enabled");
 		}
 	}
 	
