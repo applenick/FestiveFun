@@ -1,6 +1,27 @@
-events:
-  join-fireworks: true
-  join-message: true
+#Choose Which Holidays are Enabled for your Server
+holidays:
+  valentines: true
+  july-4: true
+  halloween: true
+  christmas: true
+  new-years: true
+
+#In Addition to the MOTD would you like fireworks & sounds enabled too?
+Features: 
+  fireworks: true
+  sounds: true
+  special: true
   
-messages:
-  join-message: "&4&lHappy &f&l4th of &1&lJuly!"
+#The Number of Days a Holiday should be active for (Before & After)
+Options:
+  celebrate-days-before: 1
+  celebrate-days-after: 1
+  
+#MOTD Which is Displayed During a Holiday
+MOTD:
+  enabled: true
+  valentines: "&5&lHappy &d&lValentines Day &c<3"
+  july-4: "&c&lHappy &4&l4th &f&lof &b&lJuly!"
+  halloween: "&e&lHappy &6&lHalloween"
+  christmas: "&a&lMerry &c&lChristmas"
+  new-years: "&3&lHappy &d&lNew Year!"

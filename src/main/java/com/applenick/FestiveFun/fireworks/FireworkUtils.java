@@ -8,9 +8,13 @@ import org.bukkit.craftbukkit.v1_8_R3.entity.CraftFirework;
 import org.bukkit.entity.Firework;
 import org.bukkit.inventory.meta.FireworkMeta;
 
-public class FireworkUtil {
+/************************************************
+			 Created By AppleNick
+Copyright © 2015 , AppleNick, All rights reserved.
+			http://applenick.com
+ *************************************************/
+public class FireworkUtils {
 	
-
 	public static void instantFirework(Location loc, FireworkEffect fwe){
 		Firework firework = loc.getWorld().spawn(loc, Firework.class);
 		FireworkMeta data = firework.getFireworkMeta();
@@ -30,5 +34,4 @@ public class FireworkUtil {
 		firework.setFireworkMeta(data);
 	}
 
-	
 }

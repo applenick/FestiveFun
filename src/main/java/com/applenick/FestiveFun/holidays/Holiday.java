@@ -2,8 +2,6 @@ package com.applenick.FestiveFun.holidays;
 
 import java.util.Date;
 
-import org.bukkit.FireworkEffect;
-
 /************************************************
 			 Created By AppleNick
 Copyright © 2015 , AppleNick, All rights reserved.
@@ -15,11 +13,12 @@ public class Holiday {
 	private String name;
 	private String displayName;
 	private Date date;
-	private boolean fireworks;
-	private FireworkEffect effect;
 	
 	
-	public Holiday(){
+	public Holiday(String name, String displayName, Date date){
+		this.name = name;
+		this.displayName = displayName;
+		this.date = date;
 	}
 
 
@@ -69,40 +68,5 @@ public class Holiday {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-
-
-	/**
-	 * @return the holiday firework effect
-	 */
-	public FireworkEffect getEffect() {
-		return effect;
-	}
-
-
-	/**
-	 * @param effect the holiday firework effect to set
-	 */
-	public void setEffect(FireworkEffect effect) {
-		this.effect = effect;
-	}
-
-
-	/**
-	 * @return has fireworks
-	 */
-	public boolean isFireworks() {
-		return fireworks;
-	}
-
-
-	/**
-	 * @param fireworks the fireworks to set
-	 */
-	public void setFireworks(boolean fireworks) {
-		this.fireworks = fireworks;
-	}
-	
-	
-	
 
 }
