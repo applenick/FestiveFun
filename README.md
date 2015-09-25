@@ -1,9 +1,5 @@
 FestiveFun
 ==========
 
-A Firework plugin for Holidays
-
-Current Holidays:
-
-* 4th of July
-* More coming soon
+### Currently Updating to 2.0
+_DO NOT USE ON PRODUCTION SERVER_
