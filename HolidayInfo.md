@@ -2,36 +2,31 @@
 All Information about how each Holiday affects the server will be listed here.
 Currently there is a rough outline of features that will be added.
 
-##Planned Holidays:
-
 ###Valentines Day:
   Features:
-	* MOTD On Login
-	* Valentines Fireworks On Join
-	* Click Kiss (Or something)
-		
-###4th Of July:
-  Features:
-	* MOTD On Login
-	* 4th of July Fireworks on Join
-	* Sparkle/Firework Sounds
-	* Firework Rocket Ride
+  - MOTD On Login
+  - Valentines Fireworks On Join
+  - Click Kiss (Or something)
 
-###Halloween:
+### 4th Of July
   Features:
-	* MOTD On Login
-	* Halloween Fireworks on Join
-	* Every Player has a Pumpkin Head
-		
-###Christmas:
+  - MOTD on Login
+  - Patriotic Fireworks
+
+###Halloween
   Features:
-	* MOTD On Login
-	* Christmas Fireworks
-	* Christmas Sounds
-	* Snow?
-			
+  - MOTD on Login
+  - Pumpkin / Spooky Fireworks
+  - Pumpkin Heads & Stoms
+
+### Christmas
+  Features:
+  - MOTD on Login
+  - Christmas Snow!
+  - Merry Colorful Fireworks!
+
 ###New Years Eve:
   Features:
-	* MOTD on Login
-	* Rainbow Fireworks (Random) OR Black & White / GOLD
-	* Countdown to New Year (Auto or a /command)
+  - MOTD on Login
+  - Gold/Silver/Black Fireworks for New Year
+  - New Years Eve Countdown
